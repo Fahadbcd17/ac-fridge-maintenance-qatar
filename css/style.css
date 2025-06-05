@@ -528,12 +528,32 @@
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+} 
+
+/*** Floating Action Buttons ***/
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
 }
 
 .phone-button {
     position: fixed;
-    bottom: 105px;
-    right: 30px;
+    bottom: 90px;
+    right: 20px;
     width: 60px;
     height: 60px;
     background-color: #4281c4;
@@ -549,14 +569,24 @@
     transition: all 0.3s ease;
 }
 
-.whatsapp-button:hover {
-    background-color: #128C7E;
+.whatsapp-button:hover,
+.phone-button:hover {
     transform: scale(1.1);
     color: white;
 }
 
-.phone-button:hover {
-    background-color: #0056b3;
-    transform: scale(1.1);
-    color: white;
+/* Mobile styles (screens less than 768px wide) */
+@media (max-width: 767.98px) {
+    .whatsapp-button,
+    .phone-button {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        bottom: 15px;
+        right: 15px;
+    }
+    
+    .phone-button {
+        bottom: 75px;
+    }
 }
