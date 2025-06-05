@@ -509,7 +509,8 @@
     color: #0a5c36;
   }
 
-  /*** WhatsApp Button ***/
+  
+  /*** Floating Action Buttons ***/
 .whatsapp-button {
     position: fixed;
     bottom: 30px;
@@ -529,8 +530,33 @@
     transition: all 0.3s ease;
 }
 
+.phone-button {
+    position: fixed;
+    bottom: 105px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #4281c4;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
 .whatsapp-button:hover {
     background-color: #128C7E;
+    transform: scale(1.1);
+    color: white;
+}
+
+.phone-button:hover {
+    background-color: #0056b3;
     transform: scale(1.1);
     color: white;
 }
